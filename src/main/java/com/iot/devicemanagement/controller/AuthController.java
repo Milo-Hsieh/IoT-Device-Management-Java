@@ -29,11 +29,11 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody Map<String, String> request) {
-        String usernamne = request.get("username");
+        String username = request.get("username");
         String password = request.get("password");
 
-        authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(usernamne, password));
-        UserDetails userDetails = userDetailsService.loadUserByUsername(usernamne);
+        authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
+        UserDetails userDetails = userDetailsService.loadUserByUsername(username);
         String token = jwtUtil.generateToken(userDetails.getUsername());
 
         return ResponseEntity.ok(Map.of("token", token));
