@@ -1,14 +1,23 @@
-# IoT-Device-Management-Java
-IoT Device Management - A Spring Boot REST API for managing IoT devices
+# 🌐 IoT Device Management API
 
+A **Spring Boot-powered RESTful API** for monitoring, managing, and controlling IoT devices in a **smart home** or **industrial** environment. 
 
-A **Spring Boot REST API** for managing IoT devices, featuring:
-- Device registration and tracking
-- RESTful API endpoints for CRUD operations
-- JWT authentication for secure access
-- MongoDB for data storage
+🔹 **Features:**  
+✅ Device registration & management  
+✅ Real-time status tracking  
+✅ JWT authentication & role-based access  
+✅ Alerts via messaging queue (JMS)  
+✅ Data analytics & reports  
 
-## 🚀 Tech Stack
-- **Backend**: Java, Spring Boot, JPA, JWT
-- **Database**: MongoDB
-- **Authentication**: JWT
+---
+
+## 📌 **Technologies Used**
+- **Backend:** Java 17, Spring Boot 3, Spring Security, Spring Data JPA  
+- **Database:** MySQL (H2 for testing)  
+- **Authentication:** JWT (JSON Web Token)  
+- **Messaging:** ActiveMQ (JMS)  
+- **Containerization:** Docker  
+- **API Documentation:** Swagger (OpenAPI)  
+
+---
+
